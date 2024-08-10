@@ -7,9 +7,9 @@
     insitution: "cloudwithsiva"
   tasks:
   - name: task level vars calling
-    ansible.builtin.debug:
     vars:
       coures: "Devops With Aws"
       trainer: "Siva Kumar"
+    ansible.builtin.debug:
         mesg: "Hi I'M learning {{coures}}, Tariner is {{trainer}}, from {{insitution}}, duration{{Duration}}, "
 
