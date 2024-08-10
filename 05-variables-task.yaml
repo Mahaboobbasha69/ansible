@@ -11,5 +11,5 @@
     vars:
       coures: "Devops With Aws"
       trainer: "Siva Kumar"
-       mesg: "Hi I'M learning {{coures}}, Tariner is {{trainer}}, from {{insitution}}, duration{{Duration}}, "
+        mesg: "Hi I'M learning {{coures}}, Tariner is {{trainer}}, from {{insitution}}, duration{{Duration}}, "
 
