@@ -1,0 +1,23 @@
+- name: Playbook
+  hosts: localhost
+  become: yes
+  vars:
+   courses: "Devops With Aws"
+   trainer: "Siva"
+   Duration: "100Hrs"
+  tasks:
+  - name: learning Courses
+    ansible.builtin.debug:
+    msg: "Hi I'm learing {{courses}} ,Trainer is {{trainer}} , duration {{Duration}}"
+
+#     # PLAY level variables
+# - name: variables from PLAY level
+#   hosts: localhost
+#   vars:
+#     Course: "DevOps"
+#     Trainer: "Sivakumar"
+#     Duration: "110HRS"
+#   tasks:
+#   - name: check variables
+#     ansible.builtin.debug:
+#       msg: "Hi, I am learning {{Course}}, Trainer is {{Trainer}}, Duration is {{Duration}}"
