@@ -1,6 +1,6 @@
 - name: Playbook
   hosts: localhost
-  become:yes #it will get root access
+ # become:yes #it will get root access
   vars:
    courses: "Devops With Aws"
    trainer: "Siva"
