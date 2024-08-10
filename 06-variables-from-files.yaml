@@ -1,7 +1,7 @@
 - name: variables from PLAY level
   hosts: localhost
   vars_files:
-  - variables.yaml # this is file name we stored variables in this folder, it will that file
+  - variables.yaml # this is file name, we stored variables in this file, it will call that file
   tasks:
   - name: check variables
     ansible.builtin.debug:
