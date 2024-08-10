@@ -8,7 +8,7 @@
   tasks:
   - name: learning Courses
     ansible.builtin.debug:
-    msg: "Hi I'm learing {{courses}} ,Trainer is {{trainer}} , duration {{Duration}}"
+      msg: "Hi I'm learing {{courses}}, Trainer is {{trainer}}, duration {{Duration}}"
 
 #     # PLAY level variables
 # - name: variables from PLAY level
