@@ -1,6 +1,6 @@
 - name: variables from prompt
   hosts: localhost
-  vars_prompt:
+  vars_prompt: #we have to give variables in consolu
   - name: USERNAME
     prompt: Please enter your username
     private: false # user can see what they are entering
