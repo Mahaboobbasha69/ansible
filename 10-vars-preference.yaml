@@ -1,0 +1,29 @@
+#1. CMD (First check variable and takes from on command)if variable present in command, it will take on command, if not it will go the second step
+#2. task (Second check variable takes from on task) ,, ,, ,, ,, ,, 
+#3. File (third check variable takes from on file) ,, ,, ,, ,, ,,
+#4. prompt (Four check variable takes from on promt) ,, ,, ,, ,, 
+#5. play (Five check variable takes from on play)  ,, ,, ,, ,, 
+#6. inventory (Six check variable takes from on inventory)  ,, ,, ,, ,, 
+#7. roles 
+
+- name: variables from PLAY level
+  hosts: localhost
+  vars_files:
+  - variables.yaml
+  # vars_prompt:
+  # - name: PERSON
+  #   prompt: Please enter your name
+  #   private: false # user can see what they are entering
+  # - name: WISHES
+  #   prompt: Please enter your Wishes
+  #   private: false # user can't see what they are entering
+  # vars:
+  #   PERSON: "Siva from PLAY"
+  #   WISHES: "Morning from PLAY"
+  tasks:
+  - name: check variables
+    # vars:
+    #   PERSON: "Siva from TASK"
+    #   WISHES: "Morning from TASK"
+    ansible.builtin.debug:
+      msg: "Hello {{PERSON}}, Good {{WISHES}}"
