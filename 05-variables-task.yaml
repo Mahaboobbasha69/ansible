@@ -1,0 +1,15 @@
+- name: task level varibles
+  hosts: localhots
+  vars:
+    coures: "Devops"
+    trainer: "siva"
+    Duration: "110 hrs"
+    insitution: "cloudwithsiva"
+  tasks:
+  - name: task level vars calling
+    ansible.builtin.debug:
+    vars:
+      coures: "Devops With Aws"
+      trainer: "Siva Kumar"
+       mesg: "Hi I'M learning {{coures}}, Tariner is {{trainer}}, from {{insitution}}, duration{{Duration}}, "
+
