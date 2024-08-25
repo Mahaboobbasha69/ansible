@@ -16,4 +16,6 @@
     tags:
     - aws
 
- # Using tags with roles in Ansible allows you to selectively execute or skip specific tasks within your playbooks.   
+#ansible-playbook -t devops 16-tags.yaml( if we call only devops tag so it will only excute devops task rest of other task skiped)
+
+ # Using tags with roles in Ansible allows you to selectively execute or skip specific tasks, roles, and even entire plays within a playbook. 
