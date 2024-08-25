@@ -15,3 +15,5 @@
       msg: "Hello AWS"
     tags:
     - aws
+
+ # Using tags with roles in Ansible allows you to selectively execute or skip specific tasks within your playbooks.   
